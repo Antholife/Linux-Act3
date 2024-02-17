@@ -1,5 +1,27 @@
 CHAHAT Anthony
 
+***Comment utiliser et exécuter chaque partie ?***
+
+**AVERTISSEMENT**
+ -> RUN uniquement la PARTIE 1 et 2 ensemble, ne pas run la partie 3 !
+ -> RUN uniquement la PARTIE 3 et pas d'autres !
+
+- **PARTIE 1**
+  - Accédez au dossier Part-1-Loki-Prometheus, puis aux dossiers loki et prometheus, et lancez respectivement la commande `docker compose up -d`.
+  - L'URL `m3.vms.re:3000` est opérationnelle.
+  - IDENTIFIANT GRAPHANA: admin / adminM3
+
+- **PARTIE 2**
+  - Suivez la même procédure que pour la PARTIE 1, puis accédez au dossier Part-2-Logapp et exécutez la commande `docker compose up -d`.
+  - L'URL `m3.vms.re:3000` est opérationnelle avec les données appropriées.
+  - IDENTIFIANT GRAPHANA: admin / adminM3
+  - Le tableau de bord est directement accessible ici : [Dashboard Graphana for Logapp](http://m3.vms.re:3000/d/c81246ea-6438-4de0-b47f-5aeb872639c8/logapp?orgId=1)
+
+- **PARTIE 3**
+  - Dans le dossier Part-3-Elasticsearch, lancez la commande `docker compose up -d`.
+  - L'URL `m3.vms.re:5601` est opérationnelle.
+  - Le tableau de bord est directement accessible ici : [Dashboard Elasticsearch for Logapp](http://m3.vms.re:5601/app/dashboards#/view/85773c70-cdb6-11ee-b05b-c5dff566793a?_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:now-15m,to:now)))
+
 ***PARTIE 1 - Loki***
 
 1. **Qu’est-ce que Loki ?**
